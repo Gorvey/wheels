@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../styles/reset.css">
-  <link rel="stylesheet" href="../styles/tabs.css">
-  <script src="../lib/tabs.js"></script>
-  <script src="../lib/dom.js"></script>
-</head>
-<body>
-
-  <div class="tabs-container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/tabs.css" />
+    <script src="../lib/tabs.js"></script>
+    <script src="../lib/dom.js"></script>
+  </head>
+  <body>
+    <!-- <div class="tabs-container">
     <section data-role="tabs-nav">
       <div>123123</div>
       <div>123123</div>
@@ -20,9 +19,23 @@
       <div>12312333</div>
       <div>123123332</div>
     </section>
-  </div>
-  <script>
-    let a = new Tabs({element:'.tabs-container'})
-  </script>
-</body>
+  </div> -->
+
+    <div class="tabs-container">
+      <section date-role="tab-panel">
+        <div data-label="百度">
+          <iframe src="http://www.baidu.com" frameborder="0"></iframe>
+        </div>
+        <div data-label="bing">
+          <iframe src="http://www.bing.com" frameborder="0"></iframe>
+        </div>
+        <div data-label="360">
+          <iframe src="https://www.so.com" frameborder="0"></iframe>
+        </div>
+      </section>
+    </div>
+    <script>
+      var a = new Tab({ element: '.tabs-container' })
+    </script>
+  </body>
 </html>
